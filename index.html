@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<link href="css/style.css" rel="stylesheet" type="text/css">
+		<script type="text/javascript" src="js/xmlprocess.js"></script>
+		<title></title>
+	</head>
+	<body>
+		<div class="content">
+			<div id="questionsDiv">
+				<h3 id="title"></h3>
+					
+						<label class="container">
+							<div class="option">
+								<input type="radio" name="answer" value="a"><span id="a"></span>
+								<div class="checkmark"></div>
+							</div>
+							<!-- <div class="checkmark"></div> -->
+						</label>
+						<label class="container">
+							<div class="option">
+								<input type="radio" name="answer" value="b"><span id="b"></span>
+								<div class="checkmark"></div>
+							</div>
+						</label>
+						<label class="container">
+							<div class="option">
+								<input type="radio" name="answer" value="c"><span id="c"></span>
+								<div class="checkmark"></div>
+							</div>
+						</label>
+						<label class="container">
+							<div class="option">
+								<input type="radio" name="answer" value="d"><span id="d"></span>
+								<div class="checkmark"></div>
+							</div>
+						</label>
+					<div id="buttonDiv">
+						<button type="button" id="prevBtn" onClick="writeQuestion(-1)">Previous</button>
+						<button type="button" id="nextBtn" onClick="writeQuestion(1)">Next</button>	
+					</div>
+			</div>
+			<p id="result"></p>
+		</div>
+	</body>
+</html>
